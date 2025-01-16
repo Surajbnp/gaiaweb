@@ -1,0 +1,112 @@
+.crousel {
+  width: 100%;
+  height: 90vh;
+  background-image: url("https://v5imagecollection.s3.us-east-1.amazonaws.com/gaiapng.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  color: white;
+  padding: 10px 20px;
+}
+
+.rectangle {
+  width: 100%;
+  height: 35vh;
+  background-image: url('https://v5imagecollection.s3.us-east-1.amazonaws.com/Rectangle+31.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.buyBtn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  color: white;
+}
+
+.gaia {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.sec2 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec2 > div {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px;
+  box-sizing: border-box;
+  color: #457500;
+  padding: 80px;
+}
+
+.sec2 > div:nth-child(1) {
+  width: 60%;
+}
+
+.sec2 > div:nth-child(2) {
+  background-image: url("https://v5imagecollection.s3.us-east-1.amazonaws.com/freepik__the-style-is-candid-image-photography-with-natural__6249+1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  width: 40%;
+  height: 100%;
+}
+
+.btn {
+  border: 1px solid #457500;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+@media (max-width: 768px){
+ .sec2{
+   flex-direction: column-reverse;
+ }
+
+ .sec2 > div{
+  width: 100%;
+  height: fit-content;
+  font-size: 30px;
+  text-align: start;
+  justify-self: start;
+  align-items: start;
+ }
+
+ .gaia{
+  width: 80%;
+ }
+}
